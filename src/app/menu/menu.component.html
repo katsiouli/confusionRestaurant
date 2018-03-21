@@ -2,8 +2,41 @@
     fxLayout="column" 
     fxLayoutGap="10px">
 
-    <!-- treat the list as a piece of content -->
     <mat-list fxFlex> 
-        <mat-list-item *ngFor="let dish of dishes"></mat-list-item>
+        <mat-list-item *ngFor="let dish of dishes">
+            <img mat-list-avatar src="{{dish.image}}" alt="{{dish.name}}">
+            <h1 mat-line>{{dish.name}}</h1>
+            <p mat-line>
+                <span>{{dish.description}}</span>
+            </p>
+        </mat-list-item>
     </mat-list>
 </div>
+
+<!--<div class="container">
+    
+    <mat-list> 
+        <mat-list-item *ngFor="let dish of dishes">
+            <img mat-list-avatar src="{{dish.image}}" alt="{{dish.name}}">
+            <h1 mat-line>{{dish.name}}</h1>
+            <p mat-line>
+                <span>{{dish.description}}</span>
+            </p>
+        </mat-list-item>
+    </mat-list>
+</div>-->
+
+<!--<div class="container"
+    layout="column" 
+    layoutGap="10px">
+
+    <mat-list flex> 
+        <mat-list-item *ngFor="let dish of dishes">
+            <img mat-list-avatar src="{{dish.image}}" alt="{{dish.name}}">
+            <h1 mat-line>{{dish.name}}</h1>
+            <p mat-line>
+                <span>{{dish.description}}</span>
+            </p>
+        </mat-list-item>
+    </mat-list>
+</div>-->
