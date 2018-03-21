@@ -1,3 +1,9 @@
-<p>
-  menu works!
-</p>
+<div class="container"
+    fxLayout="column" 
+    fxLayoutGap="10px">
+
+    <!-- treat the list as a piece of content -->
+    <mat-list fxFlex> 
+        <mat-list-item *ngFor="let dish of dishes"></mat-list-item>
+    </mat-list>
+</div>
