@@ -1,3 +1,5 @@
+import { Comment } from './comment';
+
 export class Dish {
   name: string;
   image: string;
@@ -5,4 +7,5 @@ export class Dish {
   price: string;
   label: string;
   description: string;
+  comments: Comment[];
 }
